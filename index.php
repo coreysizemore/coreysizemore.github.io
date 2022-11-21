@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title></title>
-
+		<!-- title -->
+		<title>Corey Sizemore Portfolio / Resume</title>
+		<!-- favicon -->
+		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+		<!-- meta data -->
 		<meta charset="UTF-8">
-		<meta name="description" content="Free Web tutorials">
-		<meta name="keywords" content="HTML, CSS, JavaScript">
-		<meta name="author" content="John Doe">
+		<meta name="description" content="Portfolio / resume website for Corey Sizemore.">
+		<meta name="keywords" content="HTML, CSS, JavaScript, Jquery, Portfolio, Resume">
+		<meta name="author" content="Corey Sizemore">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+		<!-- stylesheets -->
 		<link rel="stylesheet" href="css/style.min.css">
-
+		<!-- jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	</head>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+	<body>
+		<header>
+			<h1>Header Content</h1>
+		</header>
+		<section>
+			<h2>Body Content</h2>
+			<p>I'm hosted with GitHub Pages.</p>
+		</section>
+		<footer>
+			<p>Footer Content</p>
+		</footer>
 
-
-<script src="js/script.min.js"></script>
-
-</body>
+		<!-- scripts -->
+		<script src="js/script.min.js"></script>
+	</body>
 </html>
