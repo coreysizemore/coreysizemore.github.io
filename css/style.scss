@@ -1,5 +1,7 @@
 // colors
-$color: #FFF;
+$gray: #202233;
+$lightgray: #262839;
+$red: #FF414D;
 
 // fonts
 $font: 'Open Sans', sans-serif;
@@ -31,5 +33,5 @@ $breakpoints: (
 // custom styling below this line
 
 body {
-	background: blue;
+	background: $gray;
 }
