@@ -1,0 +1,35 @@
+// colors
+$color: #FFF;
+
+// fonts
+$font: 'Open Sans', sans-serif;
+
+// Media Query Breakpoints + Mixin
+
+$breakpoints: (
+	'xs':  ( min-width:  428px ),
+	'sm':  ( min-width:  768px ),
+	'md': ( min-width:  1024px ),
+	'lg':  ( min-width: 1440px ),
+	'xl':  ( min-width: 1700px )
+) !default;
+
+@mixin respond-to($breakpoint) {
+
+	@if map-has-key($breakpoints, $breakpoint) {
+
+		@media #{inspect(map-get($breakpoints, $breakpoint))} {
+			@content;
+		}
+	}
+
+	@else {
+		@warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. " + "Available breakpoints are: #{map-keys($breakpoints)}.";
+	}
+}
+
+// custom styling below this line
+
+body {
+	background: blue;
+}
