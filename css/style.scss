@@ -156,14 +156,14 @@ body {
 
 		h4 {
 			//color: $red;
-			font-size: 18px;
+			font-size: 20px;
 			font-weight: 900;
 			line-height: 24px;
 			margin: 0 0 10px 0;
 		}
 
 		p {
-			font-size: 16px;
+			font-size: 18px;
 			line-height: 24px;
 			margin: 0 0 10px 0;
 		}
@@ -173,7 +173,7 @@ body {
 			padding: 0;
 
 			li {
-				font-size: 16px;
+				font-size: 18px;
 				line-height: 24px;
 			}
 		}
@@ -358,7 +358,7 @@ body {
 				padding: 50px 50px;
 				width: 100%;
 
-				@include respond-to('sm') {
+				@include respond-to('md') {
 					width: calc(50% - 110px);
 				}
 
@@ -369,4 +369,21 @@ body {
 		}
 	}
 
+	.footer {
+		display: flex;
+		flex-flow: row wrap;
+		padding: 10px 40px;
+		width: calc(100% - 80px);
+
+		@include respond-to('sm') {
+			padding: 10px 100px;
+			width: calc(100% - 200px);
+		}
+
+		p {
+			display: block;
+			text-align: center;
+			width: 100%;
+		}
+	}
 }
